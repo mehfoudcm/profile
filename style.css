@@ -32,8 +32,21 @@ body {
 }
 
 .nav-links li { margin: 0 20px; }
-.nav-links a { color: white; text-decoration: none; font-weight: bold; }
+.nav-links a { 
+    color: white !important; /* Force white color */
+    text-decoration: none; 
+    font-weight: bold; 
+}
 
+/* This ensures they stay white even after being clicked */
+.nav-links a:visited {
+    color: white;
+}
+
+/* Optional: Keep your blue hover effect working */
+.nav-links a:hover {
+    color: #00a6ed;
+}
 /* Hide Toggle & Icon on Desktop */
 #menu-toggle, .menu-icon { display: none; }
 

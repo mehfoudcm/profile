@@ -55,8 +55,10 @@ body {
 }
 
 /* Alternating Background Colors */
-#home { background-color: #f6f8fa; }
-#about { background-color: #ffffff; }
+#about { background-color: #f6f8fa; }
+#experience { background-color: #ffffff; }
+#education { background-color: #f6f8fa; }
+#certifications { background-color: #ffffff; }
 #projects { background-color: #f6f8fa; }
 #contact { background-color: #ffffff; }
 

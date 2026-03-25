@@ -113,6 +113,28 @@ body {
     background: #00a6ed;
 }
 
+
+/* Narrow About Section */
+.about-container {
+    max-width: 650px; /* The "Sweet Spot" for readability */
+    width: 90%;      /* Ensures padding on mobile devices */
+    margin: 0 auto;  /* Centers the container horizontally */
+    text-align: center; 
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Increased line height for a premium feel */
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Optional: Left-align the text if you prefer a more formal look */
+/* .about-container {
+    text-align: left;
+} 
+*/
+
 /* Certifications Section Styling */
 #certifications {
     background-color: #ffffff;

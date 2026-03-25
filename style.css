@@ -9,40 +9,50 @@ body {
     line-height: 1.6;
     color: #333;
 }
-
-/* Sticky Navigation Bar */
+/* Updated Navigation Bar */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #24292e; /* GitHub Dark Grey */
-    padding: 1rem 0;
+    background: #24292e;
+    padding: 0; /* Reduced padding for mobile clearance */
     z-index: 1000;
 }
 
 .navbar ul {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centered on desktop */
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 15px 10px;
+    
+    /* Horizontal Scroll Magic */
+    overflow-x: auto;       /* Allows horizontal scrolling */
+    white-space: nowrap;    /* Keeps all items in a single line */
+    -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling on iOS */
 }
 
+/* Ensure items don't shrink and stay readable */
 .navbar li {
-    margin: 0 20px;
+    flex: 0 0 auto;
+    margin: 0 15px;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+/* Hide scrollbar for a cleaner look (optional) */
+.navbar ul::-webkit-scrollbar {
+    display: none;
+}
+.navbar ul {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;     /* Firefox */
 }
 
-.navbar a:hover {
-    color: #00a6ed;
+/* Mobile Alignment Tweak */
+@media (max-width: 600px) {
+    .navbar ul {
+        justify-content: flex-start; /* Align to left on mobile so user knows to scroll right */
+    }
 }
-
 /* Section Styling */
 .content-section {
     height: 100vh; /* Each section takes full screen height */

@@ -66,7 +66,7 @@ body {
 .scroll-window {
     width: 90%;
     max-width: 500px;
-    height: 180px;           /* Adjust this to change the window height */
+    height: 300px;           /* Adjust this to change the window height */
     overflow-y: auto;        /* Adds vertical scrollbar if content overflows */
     background: #fdfdfd;
     border: 1px solid #ddd;

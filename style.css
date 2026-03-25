@@ -54,6 +54,18 @@ body {
     border-bottom: 1px solid #eee;
 }
 
+/* Tall Section - 2 Screens Tall */
+.section-tall {
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 100px 20px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+}
+
 /* Alternating Background Colors */
 #about { background-color: #f6f8fa; }
 #experience { background-color: #ffffff; }

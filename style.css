@@ -9,48 +9,67 @@ body {
     line-height: 1.6;
     color: #333;
 }
-/* Updated Navigation Bar */
+
+
+/* Desktop Styles (Default) */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     background: #24292e;
-    padding: 0; /* Reduced padding for mobile clearance */
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
 
-.navbar ul {
+.nav-links {
     display: flex;
-    justify-content: center; /* Centered on desktop */
     list-style: none;
     margin: 0;
-    padding: 15px 10px;
-    
-    /* Horizontal Scroll Magic */
-    overflow-x: auto;       /* Allows horizontal scrolling */
-    white-space: nowrap;    /* Keeps all items in a single line */
-    -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling on iOS */
+    padding: 0;
 }
 
-/* Ensure items don't shrink and stay readable */
-.navbar li {
-    flex: 0 0 auto;
-    margin: 0 15px;
-}
+.nav-links li { margin: 0 20px; }
+.nav-links a { color: white; text-decoration: none; font-weight: bold; }
 
-/* Hide scrollbar for a cleaner look (optional) */
-.navbar ul::-webkit-scrollbar {
-    display: none;
-}
-.navbar ul {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;     /* Firefox */
-}
+/* Hide Toggle & Icon on Desktop */
+#menu-toggle, .menu-icon { display: none; }
 
-/* Mobile Alignment Tweak */
-@media (max-width: 600px) {
-    .navbar ul {
-        justify-content: flex-start; /* Align to left on mobile so user knows to scroll right */
+/* --- Mobile "Slide-In" Logic --- */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        padding: 15px;
+        position: absolute;
+        left: 10px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        left: -100%; /* Hidden off-screen to the left */
+        width: 250px;
+        height: 100vh;
+        background: #24292e;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        transition: left 0.4s ease; /* The Slide Animation */
+        box-shadow: 5px 0 15px rgba(0,0,0,0.3);
+    }
+
+    .nav-links li {
+        margin: 20px 30px;
+    }
+
+    /* When checkbox is checked, slide the menu to left: 0 */
+    #menu-toggle:checked ~ .nav-links {
+        left: 0;
     }
 }
 /* Section Styling */

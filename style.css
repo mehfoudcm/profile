@@ -60,6 +60,20 @@ body {
 #projects { background-color: #f6f8fa; }
 #contact { background-color: #ffffff; }
 
+/* Experience List Styling */
+.exp-list {
+    text-align: left; /* Aligns text to the left for better readability */
+    list-style-type: disc;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.exp-list li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
 /* Simple Project Cards */
 .placeholder-grid {
     display: flex;

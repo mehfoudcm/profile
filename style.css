@@ -98,7 +98,7 @@ body {
 
 /* Tall Section - 2 Screens Tall */
 .section-tall {
-    height: 200vh;
+    height: 220vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>CM Pages site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">Home</a></li>
+            <li><a href="#experience">About</a></li>
+            <li><a href="#education">About</a></li>
+            <li><a href="#certifications">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="home" class="content-section">
-        <h1>Welcome to My Site</h1>
-        <p>This is hosted on GitHub Pages!</p>
+    <section id="experience" class="content-section">
+        <h1>Experience</h1>
+        <p>SIL: 2022 - present</p>
+        <ul class="exp-list">
+            <li> - Built machine learning algorithm for tagging of merchants in transaction data - increasing our reach by 50% (increasing both customers and merchants, while also decreasing false positives); developed into AI Agent, establishing a network weighting (built network graph; weighted by market basket analysis) with prevalence (NLP weights and aggregate measures; TF-IDF) along with an embedding of known tokens (RAG process scoring current tokens, Snowflake provided arctic model) attached to LLM to interpret reasonable connections (Snowflake Cortex provided Mistral AI, tested with others: Llama, Claude, etc); fine-tuned Mistral model to improve output and LLM response to identify merchants from tokens</li>
+            <li> - Developed LLM search functionality utilizing RAG embedding to help sales team organize and deliver products across our entire offering of audiences and communities seamlessly and more efficiently; built a total of 5 AI tools, including search and AI Analyst (Cortex Analyst tool) requiring semantic model and orchestration; from the 5 tools, created an AI Agent and MCP Server that can be accessed via Snowflake AI and ChatGPT (and others that consume MCP); enabling sales team to get from audience ideation to audience build instantly with reasoning and logical steps - Constructed full pipeline for over 2,000 merchant and community propensity models with output options of audiences for teams, leagues, and brands trying to find their fans; built using xgboost on Snowflake notebooks in a container able to run models in parallel at less than 5 min and less than $5 per model, about 250 M inferences a minute (aggregated in packages of models for main clients but able to be delivered individually, as packages sold for over $100k, sold and renewed by multiple clients in last two years); additional models, for custom audiences also built - over 150 ensemble models and dozens of multi class models to predict spend - Managed teams of 3-4 junior data scientists, 2-3 interns, and 3 consultants (data analysts and scientists) to build a backend system to deliver insights on customer communities (translate business needs to developers - typical app creation); different timing as our organization fluctuated from as many as 30 to 10 when sold (was able to thrive with and without resources in ambiguity and objectives in start-up environment) - Organized raw transaction data into communities, characteristics, and fans for users and teammates to build analyses - consulting work with sports teams and brands (telling stories about their fans, building audiences for them to market more efficiently - helping advertisers by increasing RoAS by 100%)</li>
+            <li> - Transferred backend systems between vendors of transaction data (enabling insights and audience creation, without loss of community volumes or merchants of interest) - responsible for data and compute contract greater than $1 M</li>
+            <li> - Coached the creation of supervised and unsupervised demographic models to add detail to customers and enhance utilization of the app</li>
+        </ul>
     </section>
 
     <section id="about" class="content-section">
@@ -30,15 +38,15 @@
     <section id="projects" class="content-section">
         <h2>Projects</h2>
         <div class="placeholder-grid">
-            <div class="card">Project 1</div>
-            <div class="card">Project 2</div>
-            <div class="card">Project 3</div>
+            <div class="card">seat-optimizer</div>
+            <div class="card">MBCC App</div>
+            <div class="card">Dinner Options App</div>
         </div>
     </section>
 
     <section id="contact" class="content-section">
         <h2>Contact</h2>
-        <p>Feel free to reach out via GitHub!</p>
+        <p>mehfoudcm@***.edu</p>
     </section>
 
 </body>
